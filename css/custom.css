@@ -5,3 +5,9 @@ header {
 .indent {
     text-indent: 30px;
 }
+
+.img {
+    display: inline-block;
+    padding: 0 10px;
+    max-width: 300px;
+}
