@@ -2,6 +2,11 @@ header {
     background-image: url('../img/ori-header-bg.jpg');
 }
 
+h2 {
+    margin-top: 30px;
+    text-indent: 30px;
+}
+
 .indent {
     text-indent: 30px;
 }
@@ -9,5 +14,5 @@ header {
 .img {
     display: inline-block;
     padding: 0 10px;
-    max-width: 300px;
+    width: 300px;
 }
