@@ -2,7 +2,7 @@ header {
     background-image: url('../img/ori-header-bg.jpg');
 }
 
-h2 {
+h2, h3 {
     margin-top: 30px;
     text-indent: 30px;
 }
