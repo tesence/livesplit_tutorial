@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -17,217 +17,279 @@
     <link href="css/bootstrap.override.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
-    <!--&lt;!&ndash; Navigation &ndash;&gt;-->
-    <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">-->
-      <!--<div class="container">-->
-        <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>-->
-        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
-          <!--<span class="navbar-toggler-icon"></span>-->
-        <!--</button>-->
-        <!--<div class="collapse navbar-collapse" id="navbarResponsive">-->
-          <!--<ul class="navbar-nav ml-auto">-->
-            <!--<li class="nav-item">-->
-              <!--<a class="nav-link js-scroll-trigger" href="#about">About</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-              <!--<a class="nav-link js-scroll-trigger" href="#services">Services</a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-              <!--<a class="nav-link js-scroll-trigger" href="#contact">Contact</a>-->
-            <!--</li>-->
-          <!--</ul>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</nav>-->
-
-    <header class="text-white">
-      <div class="container text-center">
+<header class="text-white">
+    <div class="container text-center">
         <h1>LiveSplit Tutorial</h1>
         <p class="lead"><i>Ori and the Blind Forest: Definitive Edition</i></p>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <section id="introduction" class="bg-light lead">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h1>Introduction</h1>
-            <p class="indent">
-              This tutorial aims to explain how to fully setup LiveSplit and more specifically for
-              <i>Ori and the Blind Forest Definitive Edition</i>. It follows the
-              <a href="https://www.speedrun.com/ori_de/guide/0hzv7">video tutorial</a> originally made by Trojandude12.
-            </p>
 
-            <p class="indent">
-              LiveSplit is a timer program for speedrunners made to help you time your runs and track your progress by
-              allowing you to split your run into individual segments. Depending on the game, it can split for you,
-              thanks to a tool called "auto splitter". Finally it embeds SpeedRunsLive support to allow you to join
-              races and compete with the community members.
-            </p>
-          </div>
+<div id="#wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li>
+                <a href="#introduction">Introduction</a>
+            </li>
+            <li>
+                <a href="#installation">Installation</a>
+            </li>
+            <li>
+                <a href="#configuration">Configuration</a>
+                <ul class="sub-li">
+                    <li>
+                        <a href="#splits&layout">Splits & Layout</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <div id="wrapper">
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <section id="introduction" class="bg-light lead">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h1>Introduction</h1>
+                            <p class="indent">
+                                This tutorial aims to explain how to fully setup LiveSplit and more specifically for
+                                <i>Ori and the Blind Forest Definitive Edition</i>. It follows the
+                                <a href="https://www.speedrun.com/ori_de/guide/0hzv7">video tutorial</a> originally made
+                                by
+                                Trojandude12.
+                            </p>
+
+                            <p class="indent">
+                                LiveSplit is a timer program for speedrunners made to help you time your runs and track
+                                your
+                                progress by
+                                allowing you to split your run into individual segments. Depending on the game, it can
+                                split
+                                for
+                                you,
+                                thanks to a tool called "auto splitter". Finally it embeds SpeedRunsLive support to
+                                allow
+                                you to
+                                join
+                                races and compete with the community members.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="installation" class="bg-light lead">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h1>Installation</h1>
+                            <p class="indent">
+                                All you need is to download LiveSplit <a
+                                    href="https://livesplit.github.io/downloads/">here</a>
+                                and to go through the installation. Once the installation is done, launch LiveSplit and
+                                you
+                                will
+                                get
+                                something like this:
+                            </p>
+
+                            <center><img class="img" src="resources/default-livesplit-layout.png"></center>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="configuration" class="bg-light lead">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h1>Configuration</h1>
+                            <h2 id="splits&layout">Splits & Layout</h2>
+                            <p class="indent">
+                                For this part of the tutorial we assume that you configure LiveSplit to run the category
+                                <i>All Skills No OOB/TA</i>. Here is the most common example of a list of splits for
+                                this
+                                category.
+                            </p>
+
+                            <center><img class="img" src="resources/default-livesplit-splits.png"></center>
+                            <br/>
+
+                            <p class="indent">
+                                To update the split list, right-click on the LiveSplit window, go to <i>"Edit
+                                Splits..."</i>,
+                                then add the splits as the screenshot above.
+                            </p>
+
+                            <p>
+                                Because the layout and the splits are independent, there are extra empty lines.
+                                To remove the unwanted lines, go to
+                            </p>
+
+                            <p class="indent">
+                                <i>Edit layout... > Layout Settings > Splits</i>
+                            </p>
+
+                            <center><img src="resources/default-livesplit-layout-settings.png"></center>
+                            <br/>
+
+                            <p>
+                                Then decrement the <i>Total Splits</i> value until the layout looks fine. You will need
+                                to
+                                update
+                                this
+                                value everytime you add/remove a split.
+                            </p>
+
+                            <center><img class="img" src="resources/default-livesplit-splits-2.png"></center>
+                            <br/>
+
+                            <p>
+                                LiveSplit offers a lot of customization tools. Just spend some time in the layout
+                                settings
+                                and build a LiveSplit layout you like. <br/>
+                                Here are examples of what layout you can make with LiveSplit:
+                            </p>
+
+                            <center>
+                                <figure class="img">
+                                    <img src="resources/livesplit-grifs.png">
+                                    <figcaption>Grifs</figcaption>
+                                </figure>
+                                <figure class="img">
+                                    <img class="img" src="resources/livesplit-hydra.png">
+                                    <figcaption>Hydra</figcaption>
+                                </figure>
+                                <figure class="img">
+                                    <img class="img" src="resources/livesplit-smashy.png">
+                                    <figcaption>Smashy</figcaption>
+                                </figure>
+                            </center>
+
+                            <p class="indent">
+                                Now that we changed what we needed to, let's save our changes.
+                                Right-click on the LiveSplit window, then both click <i>Save Splits</i> and <i>Save
+                                Layout</i>.
+                                LiveSplit
+                                will ask you to save 2 files:
+                            </p>
+
+                            <ul>
+                                <li> A LiveSplit Split file (.lss)</li>
+                                <li> A LiveSplit Layout file (.lsl)</li>
+                            </ul>
+
+                            <p class="indent">
+                                I highly recommend you to think about how you will organize your files already. You will
+                                probably
+                                need a
+                                split file and a layout file for each game, and each category of a game. For example,
+                                you
+                                can
+                                create
+                                a
+                                folder <i>"OriDE"</i> with another <i>"All Skills No OOBTA"</i> inside it, containing
+                                both
+                                LiveSplit
+                                files.
+                            </p>
+
+                            <p class="indent">
+                                We are almost good to go. At the moment, we have the splits and the layout set up but we
+                                still
+                                need
+                                to
+                                split ourselves at the end of each segment. The last thing we need to setup is the <i>auto
+                                splitter</i>.
+                            </p>
+                            <h2>Auto splitter</h2>
+                            <p class="indent">
+                                The auto splitter is a LiveSplit tool which splits when a condition based on a game
+                                event is
+                                filled.
+                                The
+                                latest versions of LiveSplit embed an auto splitter for Ori and the Blind Forest created
+                                by
+                                DevilSquirrel.
+                            </p>
+                            <h3>Enable the auto splitter</h3>
+                            <p class="indent">
+                                To enable the auto splitter, you first need to set the game and the category you're
+                                running
+                                and
+                                LiveSplit
+                                will detect if there is an auto splitter available for it. Here we want to set
+                            </p>
+
+                            <ul>
+                                <li> Game Name: Ori and the Blind Forest Definitive Edition</li>
+                                <li> Run Category: All Skills</li>
+                            </ul>
+
+                            <p>
+                                To do so, go to <i>"Edit Splits..."</i>
+                            </p>
+
+                            <center>
+                                <figure>
+                                    <img src="resources/livesplit-game-name.png">
+                                    <figcaption>Set the game name</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="resources/livesplit-category-name.png">
+                                    <figcaption>Set the category name</figcaption>
+                                </figure>
+                            </center>
+
+                            <p class="indent">
+                                If you're running a subcategory (No OOB/TA is a sub category of All Skills alongside No
+                                Restrictions),
+                                you may also need to set it in the <i>"Additional Info"</i> tab. Here you want to set
+                                the
+                                All Skills sub category <i>"No OOB/TA"</i>
+                            </p>
+
+                            <center>
+                                <figure>
+                                    <img src="resources/livesplit-subcategory.png">
+                                    <figcaption>Set the sub category name</figcaption>
+                                </figure>
+                            </center>
+
+                            <p>
+                                Now you should see that a configurable auto splitter is available for this game. You
+                                should
+                                now
+                                be
+                                able
+                                to <i>"Activate"</i> it
+                            </p>
+
+                            <center>
+                                <figure>
+                                    <img src="resources/livesplit-autosplitter.png">
+                                </figure>
+                            </center>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-      </div>
-    </section>
+        <!-- /#page-content-wrapper -->
 
-    <section id="installation" class="bg-light lead">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h1>Installation</h1>
-            <p class="indent">
-              All you need is to download LiveSplit <a href="https://livesplit.github.io/downloads/">here</a>
-              and to go through the installation. Once the installation is done, launch LiveSplit and you will get
-              something like this:
-            </p>
+    </div>
 
-            <center><img class="img" src="resources/default-livesplit-layout.png"></center>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!--<div id="#page-content-wrapper">-->
+    <!--<div class="container-fluid container">-->
 
-    <section id="configuration" class="bg-light lead">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h1>Configuration</h1>
-            <h2>Splits & Layout</h2>
-            <p class="indent">
-              For this part of the tutorial we assume that you configure LiveSplit to run the category
-              <i>All Skills No OOB/TA</i>. Here is the most common example of a list of splits for this category.
-            </p>
-
-            <center><img class="img" src="resources/default-livesplit-splits.png"></center><br/>
-
-            <p class="indent">
-              To update the split list, right-click on the LiveSplit window, go to <i>"Edit Splits..."</i>,
-              then add the splits as the screenshot above.
-            </p>
-
-            <p>
-              Because the layout and the splits are independent, there are extra empty lines.
-              To remove the unwanted lines, go to
-            </p>
-
-            <p class="indent">
-              <i>Edit layout... > Layout Settings > Splits</i>
-            </p>
-
-            <center><img src="resources/default-livesplit-layout-settings.png"></center><br/>
-
-            <p>
-              Then decrement the <i>Total Splits</i> value until the layout looks fine. You will need to update this
-              value everytime you add/remove a split.
-            </p>
-
-            <center><img class="img" src="resources/default-livesplit-splits-2.png"></center>
-            <br/>
-
-            <p>
-              LiveSplit offers a lot of customization tools. Just spend some time in the layout settings
-              and build a LiveSplit layout you like. <br/>
-              Here are examples of what layout you can make with LiveSplit:
-            </p>
-
-            <center>
-              <figure class="img">
-                <img src="resources/livesplit-grifs.png">
-                <figcaption>Grifs</figcaption>
-              </figure>
-              <figure class="img">
-                <img class="img" src="resources/livesplit-hydra.png">
-                <figcaption>Hydra</figcaption>
-              </figure>
-              <figure class="img">
-                <img class="img" src="resources/livesplit-smashy.png">
-                <figcaption>Smashy</figcaption>
-              </figure>
-            </center>
-
-            <p class="indent">
-              Now that we changed what we needed to, let's save our changes.
-              Right-click on the LiveSplit window, then both click <i>Save Splits</i> and <i>Save Layout</i>. LiveSplit
-              will ask you to save 2 files:
-            </p>
-
-            <ul>
-              <li> A LiveSplit Split file (.lss)</li>
-              <li> A LiveSplit Layout file (.lsl)</li>
-            </ul>
-
-            <p class="indent">
-              I highly recommend you to think about how you will organize your files already. You will probably need a
-              split file and a layout file for each game, and each category of a game. For example, you can create a
-              folder <i>"OriDE"</i> with another <i>"All Skills No OOBTA"</i> inside it, containing both LiveSplit
-              files.
-            </p>
-
-            <p class="indent">
-              We are almost good to go. At the moment, we have the splits and the layout set up but we still need to
-              split ourselves at the end of each segment. The last thing we need to setup is the <i>auto splitter</i>.
-            </p>
-            <h2>Auto splitter</h2>
-            <p class="indent">
-              The auto splitter is a LiveSplit tool which splits when a condition based on a game event is filled. The
-              latest versions of LiveSplit embed an auto splitter for Ori and the Blind Forest created by DevilSquirrel.
-            </p>
-            <h3>Enable the auto splitter</h3>
-            <p class="indent">
-              To enable the auto splitter, you first need to set the game and the category you're running and LiveSplit
-              will detect if there is an auto splitter available for it. Here we want to set
-            </p>
-
-            <ul>
-              <li> Game Name: Ori and the Blind Forest Definitive Edition</li>
-              <li> Run Category: All Skills</li>
-            </ul>
-
-            <p >
-              To do so, go to <i>"Edit Splits..."</i>
-            </p>
-
-            <center>
-              <figure>
-                <img src="resources/livesplit-game-name.png">
-                <figcaption>Set the game name</figcaption>
-              </figure>
-              <figure>
-                <img src="resources/livesplit-category-name.png">
-                <figcaption>Set the category name</figcaption>
-              </figure>
-            </center>
-
-            <p class="indent">
-              If you're running a subcategory (No OOB/TA is a sub category of All Skills alongside No Restrictions),
-              you may also need to set it in the <i>"Additional Info"</i> tab. Here you want to set the
-              All Skills sub category <i>"No OOB/TA"</i>
-            </p>
-
-            <center>
-              <figure>
-                <img src="resources/livesplit-subcategory.png">
-                <figcaption>Set the sub category name</figcaption>
-              </figure>
-            </center>
-
-            <p>
-              Now you should see that a configurable auto splitter is available for this game. You should now be able
-              to <i>"Activate"</i> it
-            </p>
-
-            <center>
-              <figure>
-                <img src="resources/livesplit-autosplitter.png">
-              </figure>
-            </center>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -239,6 +301,6 @@
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
 
-  </body>
+</body>
 
 </html>
