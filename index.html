@@ -285,6 +285,34 @@
                                 <img src="resources/livesplit-autosplitter.png">
                             </figure>
                         </center>
+                        <h3>Configure the auto splitter</h3>
+                        <p class="indent">
+                            In order to configure the autosplitter, click the <i>"Settings"</i> button next to the
+                            <i>"Activate"</i> one.
+                            You should have something like this:
+                        </p>
+                        <center>
+                            <figure>
+                                <img src="resources/default-autosplitter-settings.png">
+                            </figure>
+                        </center>
+                        <p class="indent">
+                            For now there are only 2 autosplits set, <i>"Start Game"</i> and <i>"End Game"</i> which will
+                            respectively start the timer when you chose the difficulty and stop it when you lose the
+                            control of Naru at the end of the run. An autosplit ends a segment when a condition is filled
+                            <b>and if all the previous autosplits' condition have also been filled</b> (we'll come back
+                            to it). That being said, we now need to add an autosplit for each split we've set on our
+                            layout in order to make it split the wall jump segment when we visit the wall jump tree,
+                            split dash when we visit the dash tree, ...
+                        </p>
+
+                        <p class="indent">
+                            To do so we need to add an autosplit according to the splits on the layout with
+                            <i>"Start Game"</i> not matching anything (it does not correspond to the end of a split, it
+                            just starts the time) and <i>"End Game"</i> matching the last split on the layout. Here we
+                            have  13 splits on our layout so we need an autosplit for each one of these +
+                            <i>"Start Game"</i>.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -306,6 +334,10 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+
+
+
+
 
 
 
