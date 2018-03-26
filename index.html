@@ -65,7 +65,7 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid">
-            <a href="#menu-toggle" id="menu-toggle" ><img src="img/menu.png" width="50px"></a>
+            <a href="#menu-toggle" id="menu-toggle"><img src="img/menu.png" width="50px"></a>
             <section id="introduction" class="bg-light lead">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
@@ -145,7 +145,7 @@
                             <i>Edit layout... > Layout Settings > Splits</i>
                         </p>
 
-                        <center><img src="resources/default-livesplit-layout-settings.png"></center>
+                        <center><img class="img full-width" src="resources/default-livesplit-layout-settings.png"></center>
                         <br/>
 
                         <p>
@@ -247,11 +247,11 @@
 
                         <center>
                             <figure>
-                                <img src="resources/livesplit-game-name.png">
+                                <img class="img full-width" src="resources/livesplit-game-name.png">
                                 <figcaption>Set the game name</figcaption>
                             </figure>
                             <figure>
-                                <img src="resources/livesplit-category-name.png">
+                                <img class="img full-width" src="resources/livesplit-category-name.png">
                                 <figcaption>Set the category name</figcaption>
                             </figure>
                         </center>
@@ -266,7 +266,7 @@
 
                         <center>
                             <figure>
-                                <img src="resources/livesplit-subcategory.png">
+                                <img class="img full-width" src="resources/livesplit-subcategory.png">
                                 <figcaption>Set the sub category name</figcaption>
                             </figure>
                         </center>
@@ -282,7 +282,7 @@
 
                         <center>
                             <figure>
-                                <img src="resources/livesplit-autosplitter.png">
+                                <img class="img full-width" src="resources/livesplit-autosplitter.png">
                             </figure>
                         </center>
                         <h3>Configure the auto splitter</h3>
@@ -293,13 +293,15 @@
                         </p>
                         <center>
                             <figure>
-                                <img src="resources/default-autosplitter-settings.png">
+                                <img class="img full-width" src="resources/default-autosplitter-settings.png">
                             </figure>
                         </center>
                         <p class="indent">
-                            For now there are only 2 autosplits set, <i>"Start Game"</i> and <i>"End Game"</i> which will
+                            For now there are only 2 autosplits set, <i>"Start Game"</i> and <i>"End Game"</i> which
+                            will
                             respectively start the timer when you chose the difficulty and stop it when you lose the
-                            control of Naru at the end of the run. An autosplit ends a segment when a condition is filled
+                            control of Naru at the end of the run. An autosplit ends a segment when a condition is
+                            filled
                             <b>and if all the previous autosplits' condition have also been filled</b> (we'll come back
                             to it). That being said, we now need to add an autosplit for each split we've set on our
                             layout in order to make it split the wall jump segment when we visit the wall jump tree,
@@ -310,13 +312,12 @@
                             To do so we need to add an autosplit according to the splits on the layout with
                             <i>"Start Game"</i> not matching anything (it does not correspond to the end of a split, it
                             just starts the time) and <i>"End Game"</i> matching the last split on the layout. Here we
-                            have  13 splits on our layout so we need an autosplit for each one of these +
+                            have 13 splits on our layout so we need an autosplit for each one of these +
                             <i>"Start Game"</i>.
                         </p>
                     </div>
                 </div>
             </section>
-
         </div>
     </div>
     <!-- /#page-content-wrapper -->
@@ -330,21 +331,10 @@
 
 <!-- Menu Toggle Script -->
 <script>
-    $("#menu-toggle").click(function(e) {
+    $("#menu-toggle").click(function (e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
-
-
-
-
-
-
-
-
-
 </script>
-
 </body>
-
 </html>

@@ -4,7 +4,7 @@ header {
 }
 
 body {
-    background-color: #f8f9fa;
+    background-color: #F8F9FA;
 }
 
 .indent {
@@ -25,4 +25,14 @@ li {
 
     position: fixed;
     top: 20px;
+}
+
+.full-width {
+    width: auto;
+}
+
+@media only screen and (max-width: 720px) {
+    .full-width {
+        width: 100%;
+    }
 }
