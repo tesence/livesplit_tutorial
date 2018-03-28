@@ -22,7 +22,7 @@ li {
 }
 
 #menu-toggle {
-
+    z-index: 10; /* Temp fix */
     position: fixed;
     top: 20px;
 }
