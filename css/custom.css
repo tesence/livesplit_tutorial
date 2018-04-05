@@ -27,12 +27,24 @@ li {
     top: 20px;
 }
 
-.full-width {
+.full-width,
+center img {
     width: auto;
 }
 
+@media only screen and (max-width: 1520px) {
+    center img {
+        padding-top: 10px;
+    }
+}
+
 @media only screen and (max-width: 720px) {
-    .full-width {
+    .full-width,
+    center img {
         width: 100%;
     }
+}
+
+.reset-img {
+    width: auto;
 }
