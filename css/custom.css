@@ -7,17 +7,7 @@ body {
     background-color: #F8F9FA;
 }
 
-.indent {
-    text-indent: 30px;
-}
-
-.img {
-    display: inline-block;
-    padding: 0 10px;
-    width: 300px;
-}
-
-li {
+#sidebar-wrapper li {
     list-style: none
 }
 
@@ -27,24 +17,10 @@ li {
     top: 20px;
 }
 
-.full-width,
-center img {
-    width: auto;
+.gif {
+    width: 500px;
 }
 
-@media only screen and (max-width: 1520px) {
-    center img {
-        padding-top: 10px;
-    }
-}
-
-@media only screen and (max-width: 720px) {
-    .full-width,
-    center img {
-        width: 100%;
-    }
-}
-
-.reset-img {
-    width: auto;
+.livesplit {
+    max-height: 500px;
 }

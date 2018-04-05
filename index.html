@@ -45,10 +45,10 @@
                 <a href="#configuration">Configuration</a>
                 <ul class="sub-li">
                     <li>
-                        <a href="#splits&layout">Splits & Layout</a>
+                        <a href="#autosplitter">Autosplitter</a>
                     </li>
                     <li>
-                        <a href="#autosplitter">Auto splitter</a>
+                        <a href="#splits&layout">Splits & Layout</a>
                     </li>
                 </ul>
             </li>
@@ -70,14 +70,14 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h1>Introduction</h1>
-                        <p class="indent">
+                        <p>
                             This tutorial aims to explain how to fully setup LiveSplit and more specifically for
                             <i>Ori and the Blind Forest Definitive Edition</i>. It follows the
                             <a href="https://www.speedrun.com/ori_de/guide/0hzv7">video tutorial</a> originally made
                             by Trojandude12.
                         </p>
 
-                        <p class="indent">
+                        <p>
                             LiveSplit is a timer program for speedrunners made to help you time your runs and track
                             your progress by allowing you to split your run into individual segments. Some games may
                             have tools called "autosplitters" that will automatically split for you, which is the case
@@ -92,14 +92,16 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h1>Installation</h1>
-                        <p class="indent">
+                        <p>
                             All you need is to download LiveSplit
                             <a href="https://livesplit.github.io/downloads/">here</a> and to go through the
                             installation. Once the installation is done, launch LiveSplit and you will get something
                             like this:
                         </p>
-
-                        <center><img class="img" src="resources/default-livesplit-layout.png"></center>
+                        <figure class="text-center">
+                            <img class="img-fluid figure-img m-2" src="resources/default-livesplit-layout.png">
+                            <figcaption class="figure-caption">Default Livesplit layout</figcaption>
+                        </figure>
                     </div>
                 </div>
             </section>
@@ -108,16 +110,16 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h1>Configuration</h1>
-                        <h2 id="autosplitter">Auto splitter</h2>
-                        <p class="indent">
-                            The auto splitter is a LiveSplit tool which splits when a condition based on a game event is
-                            filled. The latest versions of LiveSplit embed an auto splitter for Ori and the Blind Forest
+                        <h2 id="autosplitter">Autosplitter</h2>
+                        <p>
+                            The autosplitter is a LiveSplit tool which splits when a condition based on a game event is
+                            filled. The latest versions of LiveSplit embed an autosplitter for Ori and the Blind Forest
                             created by DevilSquirrel.
                         </p>
-                        <h3>Enable the auto splitter</h3>
-                        <p class="indent">
-                            To enable the auto splitter, you first need to set the game and the category you're
-                            running and LiveSplit will detect if there is an auto splitter available for it. Here we
+                        <h3>Enable the autosplitter</h3>
+                        <p>
+                            To enable the autosplitter, you first need to set the game and the category you're
+                            running and LiveSplit will detect if there is an autosplitter available for it. Here we
                             want to set
                         </p>
 
@@ -130,69 +132,69 @@
                             To do so, go to <i>"Edit Splits..."</i>
                         </p>
 
-                        <center>
-                            <figure>
-                                <img class="img full-width" src="resources/livesplit-game-name.png">
-                                <figcaption>Set the game name</figcaption>
+                        <div class="text-center">
+                            <figure class="d-inline-block">
+                                <img class="img-fluid figure-img m-2" src="resources/livesplit-game-name.png">
+                                <figcaption class="figure-caption">Game Name</figcaption>
                             </figure>
-                            <figure>
-                                <img class="img full-width" src="resources/livesplit-category-name.png">
-                                <figcaption>Set the category name</figcaption>
+                            <figure class="d-inline-block">
+                                <img class="img-fluid figure-img m-2" src="resources/livesplit-category-name.png">
+                                <figcaption class="figure-caption">Category Name</figcaption>
                             </figure>
-                        </center>
+                        </div>
 
-                        <p class="indent">
+                        <p>
                             If you're running a subcategory (No OOB/TA is a sub category of All Skills alongside No
                             Restrictions), you may also need to set it in the <i>"Additional Info"</i> tab. Here you
                             want to set the All Skills sub category <i>"No OOB/TA"</i>.
                         </p>
 
-                        <center>
-                            <figure>
-                                <img class="img full-width" src="resources/livesplit-subcategory.png">
-                                <figcaption>Set the sub category name</figcaption>
-                            </figure>
-                        </center>
+                        <figure class="text-center">
+                            <img class="img-fluid figure-img m-2" src="resources/livesplit-subcategory.png">
+                            <figcaption class="figure-caption">Subcategory name</figcaption>
+                        </figure>
 
                         <p>
-                            Now you should see that a configurable auto splitter is available for this game. You should
+                            Now you should see that a configurable autosplitter is available for this game. You should
                             now be able to <i>"Activate"</i> it.
                         </p>
 
-                        <center>
-                            <img class="img full-width" src="resources/livesplit-autosplitter-disabled.png">
-                        </center>
+                        <figure class="text-center">
+                            <img class="img-fluid figure-img m-2" src="resources/livesplit-autosplitter-disabled.png">
+                            <figcaption class="figure-caption">Activate autosplitter</figcaption>
+                        </figure>
                         <br/>
 
-                        <h3>Configure the auto splitter</h3>
-                        <p class="indent">
+                        <h3>Configure the autosplitter</h3>
+                        <p>
                             In order to configure the autosplitter, click the <i>"Settings"</i> button next to the
                             <i>"Activate"</i> one. You should have something like this:
                         </p>
-                        <center>
-                            <figure>
-                                <img class="img full-width" src="resources/default-autosplitter-settings.png">
-                            </figure>
-                        </center>
-                        <p class="indent">
+
+                        <figure class="text-center">
+                            <img class="img-fluid figure-img m-2" src="resources/default-autosplitter-settings.png">
+                            <figcaption class="figure-caption">Default autosplitter settings</figcaption>
+                        </figure>
+
+                        <p>
                             For now there are only 2 autosplits set, <i>"Start Game"</i> and <i>"End Game"</i> which
                             will respectively start the timer when you chose the difficulty and stop it when you lose
                             the control of Naru at the end of the run.
                         </p>
 
-                        <center>
-                            <figure>
-                                <img src="resources/prologue-skip.gif">
-                                <figcaption>Start Game</figcaption>
+                        <div class="text-center">
+                            <figure class="d-inline-block">
+                                <img class="img-fluid figure-img gif m-2" src="resources/prologue-skip.gif">
+                                <figcaption class="figure-caption">Start Game</figcaption>
                             </figure>
-                            <figure>
-                                <img src="resources/time.gif">
-                                <figcaption>End Game</figcaption>
+                            <figure class="d-inline-block">
+                                <img class="img-fluid figure-img gif m-2" src="resources/time.gif">
+                                <figcaption class="figure-caption">End Game</figcaption>
                             </figure>
-                        </center>
+                        </div>
                         <br/>
 
-                        <p class="indent">
+                        <p>
                             You are basically good to go. Nevertheless you might want to add some splits in the
                             middle of the run to track your progress, see where you lose time from one run to
                             another and compute what we call a Sum of Bests.
@@ -200,74 +202,75 @@
 
 
                         <h2 id="splits&layout">Splits & Layout</h2>
-                        <p class="indent">
+                        <p>
                             Until now, you had a unique split. The split will be used to record the timer value when you
                             finishes the run. This is your <b>end game split</b>. Before doing anything, we will give
                             that split a name. It can be whatever you want, but we will name it "End" to keep it
                             explicit.
                         </p>
 
-                        <center>
-                            <img src="resources/split-end-game.png">
-                            <img class="reset-img" src="resources/layout-end-game.png">
-                        </center>
+                        <div class="text-center">
+                            <img class="img-fluid m-2" src="resources/split-end-game.png">
+                            <img class="img-fluid m-2" src="resources/layout-end-game.png">
+                        </div>
                         <br/>
 
-                        <p class="indent">
+                        <p>
                             We can now add as many splits as we want, one by one. As an example we will add the "Wall
                             Jump" split to our layout. To do so we first need to to hit <i>"Insert Above"</i> then give
                             the new split the name "Wall Jump".
                         </p>
 
-                        <center>
-                            <img src="resources/split-wall-jump.png">
-                            <img class="reset-img" src="resources/layout-wall-jump.png">
-                        </center>
+                        <div class="text-center">
+                            <img class="img-fluid m-2" src="resources/split-wall-jump.png">
+                            <img class="img-fluid m-2" src="resources/layout-wall-jump.png">
+                        </div>
                         <br/>
 
-                        <p class="indent">
+                        <p>
                             We also need to add it to our autosplitter settings to make it split when we actually get
                             wall jump. For that we need to hit <i>"Settings"</i>, and add the correct autosplit
                         </p>
 
-                        <center>
-                            <img src="resources/autosplit-wall-jump.png">
-                            <img src="resources/autosplit-wall-jump-2.png">
-                        </center>
+                        <div class="text-center">
+                            <img class="img-fluid m-2" src="resources/autosplit-wall-jump.png">
+                            <img class="img-fluid m-2" src="resources/autosplit-wall-jump-2.png">
+                        </div>
                         <br/>
 
-                        <p class="indent">
+                        <p>
                             That way, we can now add a split for Dash, for Double Jump, for Bash, ...
                         </p>
 
-                        <p class="indent">
+                        <p>
                             <b> Everytime you add a new split, you need to make sure that you add its related autosplit
                             and keep everything in the right order. To check that your autosplitter is correctly set up,
                             if you don't count "Start Game" which only starts the timer and does not match any split,
                             you need to have as many autosplits as splits on your layout ! </b>
                         </p>
 
-                        <p class="indent">
+                        <p>
                             For reference, here is the most common split list for <i>All Skills No OOB/TA</i>
                         </p>
 
-                        <center>
-                            <img src="resources/default-splits.png">
-                            <img src="resources/default-autosplits.png">
-                            <img class="reset-img" src="resources/default-livesplit-splits.png">
-                        </center>
+                        <div class="text-center">
+                            <img class="img-fluid m-2" src="resources/default-splits.png">
+                            <img class="img-fluid m-2" src="resources/default-autosplits.png">
+                        </div>
                         <br/>
 
-                        <p class="indent">
+                        <p>
                             Because the layout and the splits are independent, there are extra empty lines. To remove
                             the unwanted lines, go to
                         </p>
 
-                        <p class="indent">
+                        <p>
                             <i>Edit layout... > Layout Settings > Splits</i>
                         </p>
 
-                        <center><img class="img full-width" src="resources/default-livesplit-layout-settings.png"></center>
+                        <div class="text-center">
+                            <img class="img-fluid m-2" src="resources/default-livesplit-layout-settings.png">
+                        </div>
                         <br/>
 
                         <p>
@@ -275,7 +278,9 @@
                             to update this value everytime you add/remove a split.
                         </p>
 
-                        <center><img class="img" src="resources/default-livesplit-splits-2.png"></center>
+                        <div class="text-center">
+                            <img class="img-fluid m-2" src="resources/default-livesplit-splits-2.png">
+                        </div>
                         <br/>
 
                         <p>
@@ -284,22 +289,23 @@
                             Here are examples of what layout you can make with LiveSplit:
                         </p>
 
-                        <center>
-                            <figure class="img">
-                                <img class="img" src="resources/livesplit-grifs.png">
-                                <figcaption>Grifs</figcaption>
+                        <div class="text-center">
+                            <figure class="d-inline-block">
+                                <img class="figure-img img-fluid m-2 livesplit" src="resources/livesplit-grifs.png">
+                                <figcaption class="figure-caption">Grifs</figcaption>
                             </figure>
-                            <figure class="img">
-                                <img class="img" src="resources/livesplit-hydra.png">
-                                <figcaption>Hydra</figcaption>
+                            <figure class="d-inline-block">
+                                <img class="figure-img img-fluid m-2 livesplit" src="resources/livesplit-hydra.png">
+                                <figcaption class="figure-caption">Hydra</figcaption>
                             </figure>
-                            <figure class="img">
-                                <img class="img" src="resources/livesplit-smashy.png">
-                                <figcaption>Smashy</figcaption>
+                            <figure class="d-inline-block">
+                                <img class="figure-img img-fluid m-2 livesplit" src="resources/livesplit-smashy.png">
+                                <figcaption class="figure-caption">Smashy</figcaption>
                             </figure>
-                        </center>
+                        </div>
 
-                        <p class="indent">
+
+                        <p>
                             Now that we changed what we needed to, let's save our changes.
                             Right-click on the LiveSplit window, then both click <i>Save Splits</i> and <i>Save
                             Layout</i>. LiveSplit will ask you to save 2 files:
@@ -310,7 +316,7 @@
                             <li> A LiveSplit Layout file (.lsl)</li>
                         </ul>
 
-                        <p class="indent">
+                        <p>
                             I highly recommend you to think about how you will organize your files already. You will
                             probably need a split file and a layout file for each game, and each category of a game. For
                             example, you can create a folder <i>"OriDE"</i> with another <i>"All Skills No OOBTA"</i>
