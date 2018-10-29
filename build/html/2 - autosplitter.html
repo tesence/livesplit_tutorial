@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Autosplitter &mdash; LiveSplit Tutorial 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Splits &amp; Layout" href="3 - splits &amp; layout.html" />
+    <link rel="prev" title="Installation" href="1 - installation.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> LiveSplit Tutorial
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="0 - introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1 - installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Autosplitter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#enabling-the-autosplitter">Enabling the autosplitter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-the-autosplitter">Configuring the autosplitter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3 - splits &amp; layout.html">Splits &amp; Layout</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LiveSplit Tutorial</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Autosplitter</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/2 - autosplitter.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="autosplitter">
+<h1>Autosplitter<a class="headerlink" href="#autosplitter" title="Permalink to this headline">¶</a></h1>
+<p>The autosplitter is a LiveSplit tool which splits when a condition based on a
+game event is filled. The latest versions of LiveSplit embed an autosplitter
+for <strong>Ori and the Blind Forest</strong> created by <strong>DevilSquirrel</strong>.</p>
+<div class="section" id="enabling-the-autosplitter">
+<h2>Enabling the autosplitter<a class="headerlink" href="#enabling-the-autosplitter" title="Permalink to this headline">¶</a></h2>
+<p>To enable the autosplitter, you first need to set the game and the category
+you’re running and LiveSplit will detect if there is an autosplitter available
+for it. Here we want to set</p>
+<ul class="simple">
+<li>Game Name: Ori and the Blind Forest Definitive Edition</li>
+<li>Run Category: All Skills</li>
+</ul>
+<p>To do so, go to <span class="guilabel">Edit Splits…</span></p>
+<a class="reference internal image-reference" href="_images/livesplit-game-name.png"><img alt="_images/livesplit-game-name.png" src="_images/livesplit-game-name.png" style="width: 45%;" /></a>
+<a class="reference internal image-reference" href="_images/livesplit-category-name.png"><img alt="_images/livesplit-category-name.png" src="_images/livesplit-category-name.png" style="width: 45%;" /></a>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>If you’re running a subcategory (No OOB/TA is a sub category of All Skills
+alongside No Restrictions), you may also need to set it in the
+<span class="guilabel">Additional Info</span> tab. Here you want to set the All Skills sub
+category <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">OOB/TA</span></code>.</p>
+<a class="last reference internal image-reference" href="_images/livesplit-subcategory.png"><img alt="_images/livesplit-subcategory.png" class="align-center" src="_images/livesplit-subcategory.png" style="width: 45%;" /></a>
+</div>
+<p>Now you should see that a configurable autosplitter is available for this game.
+You should now be able to <span class="guilabel">Activate</span> it.</p>
+<div class="figure" id="id1">
+<img alt="_images/livesplit-autosplitter-disabled.png" src="_images/livesplit-autosplitter-disabled.png" />
+<p class="caption"><span class="caption-text">Activate the autosplitter</span></p>
+</div>
+</div>
+<div class="section" id="configuring-the-autosplitter">
+<h2>Configuring the autosplitter<a class="headerlink" href="#configuring-the-autosplitter" title="Permalink to this headline">¶</a></h2>
+<p>In order to configure the autosplitter, <span class="guilabel">Settings</span> button next to the
+<span class="guilabel">Activate</span> one. You should have something like this:</p>
+<div class="figure" id="id2">
+<img alt="_images/default-autosplitter-settings.png" src="_images/default-autosplitter-settings.png" />
+<p class="caption"><span class="caption-text">Default autosplitter settings</span></p>
+</div>
+<p>For now there are only 2 autosplits set, <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Game</span></code> and <code class="docutils literal notranslate"><span class="pre">End</span> <span class="pre">Game</span></code> which
+will respectively start the timer when you chose the difficulty and stop it when
+you lose the control of Naru at the end of the run.</p>
+<a class="reference internal image-reference" href="_images/prologue-skip.gif"><img alt="_images/prologue-skip.gif" src="_images/prologue-skip.gif" style="width: 45%;" /></a>
+<a class="reference internal image-reference" href="_images/time.gif"><img alt="_images/time.gif" src="_images/time.gif" style="width: 45%;" /></a>
+<p>You are basically good to go. Nevertheless you might want to add some splits in
+the middle of the run to track your progress, see where you lose time from one
+run to another and compute what we call a <strong>Sum of Bests</strong>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="3 - splits &amp; layout.html" class="btn btn-neutral float-right" title="Splits &amp; Layout" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="1 - installation.html" class="btn btn-neutral" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, GreeZ
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

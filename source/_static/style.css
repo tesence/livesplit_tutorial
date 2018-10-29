@@ -1,0 +1,4 @@
+/* Force the body to take the whole page width (sphinx theme default: 800px) */
+.wy-nav-content {
+  max-width: none !important;
+}
