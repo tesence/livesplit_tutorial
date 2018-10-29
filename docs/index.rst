@@ -10,7 +10,7 @@ Welcome to LiveSplit Tutorial
    :maxdepth: 2
    :caption: Contents:
 
-   0 - introduction.rst
-   1 - installation.rst
-   2 - autosplitter.rst
-   3 - splits & layout.rst
+   0 - introduction
+   1 - installation
+   2 - autosplitter
+   3 - splits & layout
