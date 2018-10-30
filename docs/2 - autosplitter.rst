@@ -6,6 +6,7 @@ The autosplitter is a LiveSplit tool which splits when a condition based on a
 game event is filled. The latest versions of LiveSplit embed an autosplitter
 for **Ori and the Blind Forest** created by **DevilSquirrel**.
 
+
 -------------------------
 Enabling the autosplitter
 -------------------------
@@ -43,6 +44,7 @@ You should now be able to :guilabel:`Activate` it.
 
   Activate the autosplitter
 
+
 ----------------------------
 Configuring the autosplitter
 ----------------------------
@@ -67,3 +69,26 @@ you lose the control of Naru at the end of the run.
 You are basically good to go. Nevertheless you might want to add some splits in
 the middle of the run to track your progress, see where you lose time from one
 run to another and compute what we call a **Sum of Bests**.
+
+
+-------------------------
+Combination of autosplits
+-------------------------
+
+Some events might be hard to transcribe into an autosplit. In fact, if the
+event you want to catch is a bit complex (e.g: Save & Quit, Entering Horu after
+collecting 10 Ability Cells), a unique autosplit is not enough. However, it is
+possible to stack them to make LiveSplit split when all the conditions are
+filled. The checkboxes on the right of each autosplit is what makes it
+possible.
+
+* If the checkbox is checked off: LiveSplit will split when the condition is
+  filled.
+
+* If the checkbox is not checked off: LiveSplit will check the condition without
+  splitting but will add this requirement to the next split that has its
+  checkbox checked off
+
+As an example, this is the sequence of autosplits required to
+
+.. todo: Add a screenshot of the autosplit of the Save & Quit and the gif

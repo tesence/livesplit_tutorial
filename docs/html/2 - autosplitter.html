@@ -84,6 +84,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Autosplitter</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#enabling-the-autosplitter">Enabling the autosplitter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#configuring-the-autosplitter">Configuring the autosplitter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#combination-of-autosplits">Combination of autosplits</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="3 - splits &amp; layout.html">Splits &amp; Layout</a></li>
@@ -199,6 +200,23 @@ you lose the control of Naru at the end of the run.</p>
 <p>You are basically good to go. Nevertheless you might want to add some splits in
 the middle of the run to track your progress, see where you lose time from one
 run to another and compute what we call a <strong>Sum of Bests</strong>.</p>
+</div>
+<div class="section" id="combination-of-autosplits">
+<h2>Combination of autosplits<a class="headerlink" href="#combination-of-autosplits" title="Permalink to this headline">¶</a></h2>
+<p>Some events might be hard to transcribe into an autosplit. In fact, if the
+event you want to catch is a bit complex (e.g: Save &amp; Quit, Entering Horu after
+collecting 10 Ability Cells), a unique autosplit is not enough. However, it is
+possible to stack them to make LiveSplit split when all the conditions are
+filled. The checkboxes on the right of each autosplit is what makes it
+possible.</p>
+<ul class="simple">
+<li>If the checkbox is checked off: LiveSplit will split when the condition is
+filled.</li>
+<li>If the checkbox is not checked off: LiveSplit will check the condition without
+splitting but will add this requirement to the next split that has its
+checkbox checked off</li>
+</ul>
+<p>As an example, this is the sequence of autosplits required to</p>
 </div>
 </div>
 
